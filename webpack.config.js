@@ -44,6 +44,10 @@ module.exports = {
     contentBase:'./src',
     inline:true,
   },
+  resolve: {
+    extensions: ['.js', 'index.js', '.jsx', 'index.jsx'],
+    modules: ['node_modules'], // 指定套件的路徑
+  },
   plugins:[
     HTMLWebpackPluginConfig,
   ]
