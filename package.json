@@ -33,8 +33,13 @@
     ]
   },
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "recharts": "^1.0.0-alpha.4"
+    "npm": "^5.4.1",
+    "ramda": "^0.20.0",
+    "react": "^16.0.0-rc.2",
+    "react-dom": "^16.0.0-rc.2",
+    "react-redux": "^5.0.6",
+    "recharts": "^1.0.0-alpha.4",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2"
   }
 }

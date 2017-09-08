@@ -45,7 +45,7 @@ module.exports = {
     inline:true,
   },
   resolve: {
-    extensions: ['.js', 'index.js', '.jsx', 'index.jsx'],
+    extensions: ['index.js', 'index.jsx', '.js', '.jsx'],
     modules: ['node_modules'], // 指定套件的路徑
   },
   plugins:[
