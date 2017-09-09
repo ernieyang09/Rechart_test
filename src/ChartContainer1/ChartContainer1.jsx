@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as R from 'ramda'
 import { ChartAction1 } from './'
+import CountChart from '../CountChart'
 
 class ChartContainer extends Component {
 
@@ -26,6 +27,7 @@ class ChartContainer extends Component {
   render() {
     return (
       <div>
+        <CountChart dataSet={this.props.chart1.total} />
         <input type="button" value='test' onClick={this.randomData} />
       </div>
     )
