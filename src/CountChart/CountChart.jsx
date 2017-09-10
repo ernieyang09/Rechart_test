@@ -34,7 +34,7 @@ class CountChart extends Component {
     const xTick = this.xTickShow()
 
     return (
-      <ResponsiveContainer aspect={3}>
+      <ResponsiveContainer aspect={4}>
         <LineChart data={this.props.dataSet}>
           <XAxis
             tickFormatter={this.xAxisShow}
@@ -44,7 +44,7 @@ class CountChart extends Component {
           <CartesianGrid
             strokeDasharray="3 3"
           />
-          <Line type="monotone" dataKey="count" stroke="#8884d8" activeDot={{r: 8}}/>
+          <Line type="basic" dataKey="count" stroke="#8884d8" activeDot={{r: 8}}/>
         </LineChart>
       </ResponsiveContainer>
     )
