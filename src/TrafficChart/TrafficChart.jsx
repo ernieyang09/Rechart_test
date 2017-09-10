@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -14,7 +14,7 @@ import moment from 'moment'
 import * as R from 'ramda'
 import './style.scss'
 
-class CountChart extends Component {
+class TrafficChart extends Component {
 
   xTickShow = () => (
     R.pipe(
@@ -35,7 +35,7 @@ class CountChart extends Component {
 
     return (
       <ResponsiveContainer aspect={4}>
-        <LineChart data={this.props.dataSet}>
+        <AreaChart data={this.props.dataSet}>
           <XAxis
             tickFormatter={this.xAxisShow}
             ticks={xTick}
@@ -44,11 +44,11 @@ class CountChart extends Component {
           <CartesianGrid
             strokeDasharray="3 3"
           />
-          <Line dataKey="count" stroke="#8884d8" activeDot={{r: 8}}/>
-        </LineChart>
+          <Area dataKey="count" />
+        </AreaChart>
       </ResponsiveContainer>
     )
   }
 }
 
-export default CountChart;
+export default TrafficChart;
